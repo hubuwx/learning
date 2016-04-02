@@ -1,0 +1,62 @@
+<div class="page-signin" >
+
+    <div class="signin-header">
+        <section class="logo text-center">
+        <img src="images/logo.png" class="authLogo">
+        </section>
+    </div>
+
+    <div class="signin-body" ng-controller="signinCtrl">
+        <div class="container">
+            <div class="form-container">
+
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                            <input type="text"  ng-model="user.name"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Username"
+                                   >
+                        </div>
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-lock"></span>
+                            </div>
+                            <input type="password"
+                            	   ng-model="user.pass" 
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Password"
+                                   >
+                        </div>
+                        <div class="form-group">
+                            <a class="btn btn-primary btn-danger btn-round btn-block text-center" ng-click="login()">Log in</a>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <section>
+                    <p class="text-center"><a class="customLink" href="#/pages/forgot-password">Forgot your password?</a></p>
+                    <p class="text-center text-muted text-small">Don't have an account yet? <a href="#/pages/signup" class="customLink">Sign up</a></p>
+                </section>
+               
+            </div>
+        </div>
+    </div>
+<script type="text/ng-template" id="myModalContent.html">
+                        <div class="modal-header">
+                            <h3>E-Learning!</h3>
+                        </div>
+                        <div class="modal-body">
+
+                           <b > Authentication Error</b>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" ng-click="ok()">OK</button>
+                             
+                        </div>
+                    </script>
+                   
+</div>

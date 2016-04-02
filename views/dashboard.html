@@ -1,0 +1,155 @@
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+    <!-- Stats -->
+    <div class="row">
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-info">
+                    <i class="fa fa-rocket"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">36 <span class="size-h4">%</span></p>
+                    <p class="text-muted"><span data-i18n="Growth"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-success">
+                    <i class="fa fa-check"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">2 <span class="size-h4"></span></p>
+                    <p class="text-muted"><span data-i18n="Passed Tests"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-danger">
+                    <i class="fa fa-trophy "></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">1</p>
+                    <p class="text-muted"><span data-i18n="Skills Mastred"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-success">
+                    <i class="fa fa-thumbs-up "></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">40 <span class="size-h4">%</span></p>
+                    <p class="text-muted"><span data-i18n="Success Rate"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end stats -->
+
+    <div class="row">
+        <div class="col-lg-8">
+           <!-- Media object -->
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="News"></span></strong></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <a class="pull-left" href="javascript:;">
+                            <img alt="" src="images/logo.png" class="img-rounded img64_64">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media Heading</h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce cfelis in faucibus.</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="javascript:;">
+                            <img alt="" src="images/logo.png" class="img-rounded img64_64">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at. Donec lacinia congue felis in faucibus.</p>
+ 						</div>
+                    </div>
+					<div class="media">
+                        <a class="pull-left" href="javascript:;">
+                            <img alt="" src="images/logo.png" class="img-rounded img64_64">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at. Donec lacinia congue felis in faucibus.</p>
+ 						</div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="javascript:;">
+                            <img alt="" src="images/logo.png" class="img-rounded img64_64">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at. Donec lacinia congue felis in faucibus.</p>
+ 						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Media object -->             
+        </div>
+        <div class="col-lg-4">
+
+            <div class="row" data-ng-controller="chartCtrl">
+                
+                <div class="col-xsm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div easypiechart options="easypiechartsm1.options" percent="easypiechartsm1.percent" class="easypiechart easypiechart-sm">
+                                <span class="pie-percent" ng-bind="easypiechartsm1.percent"></span>
+                            </div>
+                            <p class="text-center text-muted">Java</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xsm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div easypiechart options="easypiechartsm2.options" percent="easypiechartsm2.percent" class="easypiechart easypiechart-sm">
+                                <span class="pie-percent" ng-bind="easypiechartsm2.percent"></span>
+                            </div>
+                            <p class="text-center text-muted">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xsm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div easypiechart options="easypiechartsm3.options" percent="easypiechartsm3.percent" class="easypiechart easypiechart-sm">
+                                <span class="pie-percent" ng-bind="easypiechartsm3.percent"></span>
+                            </div>
+                            <p class="text-center text-muted">Microsoft CRM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xsm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div easypiechart options="easypiechartsm4.options" percent="easypiechartsm4.percent" class="easypiechart easypiechart-sm">
+                                <span class="pie-percent" ng-bind="easypiechartsm4.percent"></span>
+                            </div>
+                            <p class="text-center text-muted">AngularJs</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+ 
+
+</div>
+  

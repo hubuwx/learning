@@ -1,0 +1,87 @@
+<div class="page-signup">
+
+    <div class="signup-header">
+         <section class="logo text-center">
+        <img src="images/logo.png" class="authLogo">
+        </section>
+    </div>
+
+    <div class="signup-body" ng-controller="signupCtrl">
+        <div class="container">
+            <div class="form-container">
+
+                <section>
+                    <form class="form-horizontal text-center">
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </div>
+                            <input  type="text" ng-model="user.login"
+                                    class="form-control input-lg input-round text-center"
+                                    placeholder="Username" required 
+                                    >
+                        </div>
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                            <input type="email" ng-model="user.email"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Email" required
+                                   >
+                        </div>
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-lock"></span>
+                            </div>
+                            <input type="password" ng-model="user.pass"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Password" required
+                                   >
+                        </div>
+						 <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </div>
+                            <input type="text" ng-model="user.name"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="First Name" required
+                                   >
+                        </div>
+                         <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </div>
+                            <input type="text" ng-model="user.lastname"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Last Name" required
+                                   >
+                        </div>
+                        <div class="form-group">
+                            <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                <span class="glyphicon glyphicon glyphicon-earphone"></span>
+                            </div>
+                            <input type="phone" ng-model="user.phone"
+                                   class="form-control input-lg input-round text-center"
+                                   placeholder="Phone" required
+                                   >
+                        </div>
+                         
+                        <div class="form-group">
+                             <div class="divider"></div>
+                            <a class="btn btn-primary btn-danger btn-round btn-block text-center" ng-click="signUp()">Sign up</a>
+                        </div>
+ 					 <!-- Select -->
+            
+            <!-- end Select -->
+                    </form>
+                </section>
+
+                <section>
+                    <p class="text-center text-muted">Already have an account? <a href="#/pages/signin" class="customLink">Log in now</a></p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>

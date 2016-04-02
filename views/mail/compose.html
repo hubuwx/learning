@@ -1,0 +1,38 @@
+<div class="page">
+    <div class="row">
+        
+        <div  >
+            <section class="panel panel-default mail-container mail-compose">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Contact"></span></strong></div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="mail_to" class="col-xs-2">E-Mail:</label>
+                            <div class="col-xs-10">
+                                <input type="text" id="mail_to" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail_cc" class="col-xs-2">Name:</label>
+                            <div class="col-xs-10">
+                                <input type="text" id="mail_cc" class="form-control">
+                            </div>
+                        </div>
+                         
+                        <div class="form-group">
+                            <label for="mail_subject" class="col-xs-2">Subject:</label>
+                            <div class="col-xs-10">
+                                <input type="text" id="mail_subject" class="form-control">
+                            </div>
+                        </div>
+                        <div text-angular ng-model="mailContent" class="ui-editor"></div>
+                    </form>
+                    <div class="mail-actions">
+                        <div class="btn btn-sm btn-primary btn-danger">Send</div>
+                         <div class="btn btn-sm btn-default">Discard</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

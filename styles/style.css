@@ -1,0 +1,33 @@
+.page-signin, .page-forgot, .page-signup{
+	background: url('../images/background/2.jpg');
+	width: 100%;
+	height: 100%
+}
+
+.page-forgot .signin-header, .page-signin .signin-header  
+	{
+	margin-top: 0px !important;
+	padding-top: 50px;
+}
+.page-signup .signup-header{
+	margin-top: 0px !important;
+	padding-top: 10px;
+}
+.customLink{
+	color: #F05565 !important;
+}
+@media ( min-width :768px) {
+	.page-forgot .signin-header, .page-signin .signin-header
+		{
+		padding-top: 140px;
+	}
+	 .page-signup .signup-header{
+	 padding-top: 10px! important;
+	 overflow: auto;
+	 }
+}
+
+.authLogo {
+	width: 250px;
+	margin-left: -11px;
+}
